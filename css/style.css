@@ -1,0 +1,86 @@
+@keyframes slide{
+    0%{
+        transform: translate(100%);
+    }
+    50%{
+        transform: translate(-100%);
+    }
+    100%{
+        transform: translate(100%);
+    }
+}
+
+/* Animations over  */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.main-box{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+
+}
+.main-box .row{
+    padding-top: 3px;
+    
+}
+.main-box .row ul{
+    height: 100%;
+    list-style: none;
+}
+
+
+
+.main-box .row ul li{
+    height: 100%;
+    float: left;
+}
+
+.main-box .row ul li img{
+    height: 100%;
+    width: auto;
+    padding: 3px;
+
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.main-box2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+
+    justify-content: end;
+
+    
+}
+.fade-box
+{
+    height: 100vh;
+    width: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background: #983fe0;
+
+    opacity: 0.6;
+
+    overflow: hidden;
+}
+
+
+/* Animations go here ... */
+
+

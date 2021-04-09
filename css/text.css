@@ -1,0 +1,43 @@
+*{
+    font-family:  'Comfortaa', cursive;
+}
+
+.title-text{
+    font-size: 5rem;
+    font-family: 'Comfortaa', cursive;
+    color: #fff;
+    text-align: center;
+}
+
+.caption-text
+{
+    font-size: 1.5rem;
+    font-family: 'Comfortaa', cursive;
+    color: #fff ;
+    text-align: center;
+}
+
+.main-box-ticket .heading-text{
+    font-size: 2rem;
+    font-weight: bold;
+
+    padding-top: 10%;
+}
+
+.main-box-ticket .cap-txt{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px){
+    .title-text{
+        font-size: 4rem;
+        padding: 2%;
+    }
+    .caption-text{
+        font-size: 1rem;
+    }
+}

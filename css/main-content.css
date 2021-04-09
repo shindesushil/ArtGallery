@@ -1,0 +1,318 @@
+.full-screen
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    height: 100vh;
+    width: 100%;
+
+}
+.main-content
+{
+   
+    z-index: 5;
+
+    overflow: hidden;
+}
+
+.menu-container
+{
+    /* display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+
+    height: 90vh;
+    width: 90%;
+
+   background: black;
+
+    overflow: hidden;
+
+    margin-top: 2.5%;
+    margin-left: 4.5%; */
+
+    padding-top: 2rem;
+    padding-left: 2rem;
+
+}
+
+.menu-container .box
+{
+    display: flex;
+}
+
+
+
+.menu
+{
+    background: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 1.5rem;
+    border-radius: 3px;
+
+    opacity: 0.9;
+}
+
+.title-box{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+
+    flex-direction: column;
+
+}
+
+
+
+.content-box
+{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+
+    display: none;
+
+}
+
+.content-box .about-box{
+    height: 80vh;
+    width: 80%;
+
+    background: grey;
+}
+
+.menu:hover{
+    cursor: pointer;
+}
+
+.sticky-section
+{
+    height: 100vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.intro-box{
+    height: 100%;
+    width: inherit;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    overflow: hidden;
+}
+
+.intro-box .sub-intro1{
+    /* background: green; */
+    padding-left: 3%;
+}
+
+.intro-box .sub-intro2{
+    background: #c9feff;
+
+    overflow: hidden;
+
+}
+
+
+.sub-intro1{
+    position: relative;
+}
+
+ .sub-intro1 img{
+    height: 95vh;
+    width: auto;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+} 
+
+.sub-intro2{
+    position: relative;
+}
+
+.sub-intro2 .circle{
+    background: white;
+    height: 150%;
+    width: 180%;
+
+    /* border-radius: 100%; */
+
+    position: absolute;
+    /* top: -70%; */
+    left: -70%;
+    bottom: 10%;
+
+    border-radius: 100%;
+    
+}
+
+.sub-intro2 .data-box{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    padding-top: 15%;
+    padding-left: 5%;
+
+    font-size: 1.5rem;
+}
+
+.sub-intro2 .data-box p{
+    text-align: center;
+    padding-left: 4%;
+    padding-top: 6%;
+}
+.main-box-ticket{
+    height: 100vh;
+    width: 100%;
+
+    background: #fff;
+
+    position: relative;
+    z-index: 5;
+}
+
+.main-box-ticket .cap2{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    overflow: hidden;
+
+}
+
+.cap2 button{
+    padding: 1%;
+    background: #00bab1;
+    color: #fff;
+    border-style: none;
+    border-radius: 5px;
+
+    transition: transform .3s;
+}
+
+.cap2 button:hover{
+    background: #00968f;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cap1{
+    width: 100%;
+    height: 25vh;
+    background: #0082ba;
+
+    position: relative;
+}
+
+.cap1 .sub-cap{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 70%;
+
+    background: #860b9c;
+
+    box-shadow: #000 2px 5px 15px;
+}
+
+.footer{
+    width: 100%;
+    height: 30vh;
+
+    background: #0f0012;
+    color: #fff;
+
+    position: absolute;
+    z-index: 6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 650px){
+    .intro-box{
+        height: 100%;
+        width: inherit;
+    
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+        
+        overflow: hidden;
+    }
+
+    .sub-intro1 img{
+        height: 100%;
+        width: auto;
+    }
+
+
+    .sub-intro2 .circle{
+        background: white;
+        height: 130%;
+        width: 125%;
+    
+        /* border-radius: 100%; */
+    
+        position: absolute;
+        /* top: -30%; */
+        left: -25%;
+        bottom: 10%;
+    
+        border-radius: 100%;
+    }
+    
+    .sub-intro2 .data-box{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    
+        padding-top: 5%;
+        padding-left: 4%;
+        padding-right: 5%;
+    
+        font-size: 1.2rem;
+
+        overflow: auto;
+    }
+    
+    .sub-intro2 .data-box p{
+        text-align: center;
+        padding-left: 4%;
+        padding-top: 10%;
+    }
+    .cap2 button{
+        padding: 5%;
+    }
+    .footer{
+        height: 30vh;
+        
+        position: relative;
+        
+    }
+
+}
